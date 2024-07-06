@@ -1,0 +1,116 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --gris: #757575;
+}
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    /* hack para box model */
+    /*scroll-snap-type: y mandatory; /* para el scroll de arriba hacia abajo */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    /* 1 rem = 10px */
+}
+
+nav {
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+}
+
+.carousel h4{
+    
+        font-family: 'Josefin Sans';
+        font-weight: 700;
+        font-size: 4rem;
+        color: #E7F0DC;
+}
+
+.carousel p{
+    
+    font-family: 'Playwrite CO';
+    font-weight: 700;
+    font-size: 4rem;
+    color: #E7F0DC;
+}
+
+@media (min-width: 990px) {
+    .nav-principal{
+        height: 6rem;
+    }
+}
+
+nav ul li {
+    white-space: nowrap; /* No permitir que el texto se divida en varias líneas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-principal {
+    background-color: #E178C5;
+}
+
+.nav-principal a:hover {
+    color: var(--blanco)
+}
+
+.nav-principal a {
+    color: var(--gris);
+}
+
+ul {
+    flex-direction: row;
+    /* coloca los elementos en una sola linea de manera horizontal uno despues del otro */
+    justify-content: space-between;
+    /*mover contenido horizontalmente en este caso se movieron hacia el centro con un espaiciado uniforme*/
+}
+
+#navbarNav{
+    background: #74ebd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 10px;
+}
+
+/* Estilo para el contenedor del logo */
+.nav-logo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para la imagen de fondo */
+.nav-logo::before {
+    content: "";
+    background-image: url('../img/Logo-negro-sin-fondo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 9rem; /* Ajusta el ancho según tus necesidades */
+    height: 9rem; /* Ajusta la altura según tus necesidades */
+    display: block;
+}
+
+
+.carousel-item {
+    height: 425px; /* ajusta la altura según sea necesario */
+  }
+  
+  .carousel-item img {
+    object-fit: cover; /* asegura que las imágenes se ajusten al tamaño del carousel */
+    height: 100%;
+  }
