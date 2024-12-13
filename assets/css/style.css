@@ -2,6 +2,10 @@
     --blanco: #ffffff;
     --oscuro: #212121;
     --gris: #757575;
+    --rosa-paleta: #FFCCEA;
+    --acua-paleta: #81BFDA;
+    --vesh-paleta: #FEFAE0;
+    --morado-paleta: #B1AFFF;
 }
 
 
@@ -20,8 +24,9 @@ html {
 }
 
 body {
-    font-size: 16px;
+    font-size: 40px;
     /* 1 rem = 10px */
+    background-color: var(--vesh-paleta);
 }
 
 nav {
@@ -50,7 +55,7 @@ nav ul li {
 
 
 .nav-principal a:hover {
-    color: var(--blanco)
+    color: var(--rosa-paleta);
 }
 
 .nav-principal a {
@@ -64,8 +69,8 @@ ul {
     /*mover contenido horizontalmente en este caso se movieron hacia el centro con un espaiciado uniforme*/
 }
 
-.nav-principal{
-    background-color: rgba(0, 0, 0, 0.9); /* Fondo semitransparente */
+.custom-navbar{
+    background-color: var(--vesh-paleta);
 }
 
 
@@ -80,7 +85,7 @@ ul {
 /* Estilo para la imagen de fondo */
 .nav-logo::before {
     content: "";
-    background-image: url('../img/Logo-blanco-sin-fondo.png');
+    background-image: url('../img/Logo-Acua-sin-fondo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -119,7 +124,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    /*background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
 }
 
 .contenido-header img {
@@ -127,74 +132,20 @@ ul {
     width: 100%;
 }
 
+.contenido-principal h3{
+    color: var(--acua-paleta);
+}
+
+.contenido-principal h4{
+    color: var(--rosa-paleta);
+}
+
+@media (min-width: 480px) {
 .contenedor{
-    max-width: 120rem;
-    /*margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-left: auto;
-    */
-    /*margin: 0 auto 0 auto;
-    */
-    margin: 0 auto; /*crece hacia afuera del elemento */
+    max-width: 50rem;
+    margin: 0 auto; /* Centra el contenedor */
 }
-
-@media (min-width: 480px) { 
-.centrar{
-    width: 50%; /* Define un ancho */
-    margin: 0 auto; /* Centra horizontalmente */
 }
-
-}
-.footer{
-    border-top: 1px solid gray; /* Línea negra de 2px */
-    padding-top: 5px; /* Espacio entre el texto y la línea */
-}
-
-
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://marinawilliamseducation.com/assets/hero.jpg') center/cover no-repeat;
-    color: #fff;
-    padding: 8rem 2rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.hero-section h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    position: relative;
-    z-index: 1;
-}
-
-.hero-section p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-}
-
 .about-section {
     padding: 4rem 2rem;
     background-color: #f4f4f4;
@@ -225,7 +176,7 @@ body {
 
 .about-section img {
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(127, 127, 127, 0.8);
 }
 
 .footer {
