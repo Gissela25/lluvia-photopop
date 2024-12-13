@@ -1,0 +1,29 @@
+runtime: python39
+
+handlers:
+  # Serve assets like CSS, JS, and images
+  - url: /assets
+    static_dir: assets
+
+  # Serve components like navbar and footer
+  - url: /components
+    static_dir: components
+
+  # Serve the main pages
+  - url: /investment.html
+    static_files: investment.html
+    upload: investment.html
+
+  - url: /myhistory.html
+    static_files: myhistory.html
+    upload: myhistory.html
+
+  # Serve the homepage
+  - url: /
+    static_files: index.html
+    upload: index.html
+
+  # Default route
+  - url: /.*
+    static_files: index.html
+    upload: index.html
