@@ -6,6 +6,11 @@
     --acua-paleta: #5B99C2;
     --vesh-paleta: #FEFAE0;
     --morado-paleta: #9932cc;
+    --anaranjado-paleta: #FFD18E;
+    --amarillo-oscuro:#1F509A;
+    --celeste: #D4EBF8;
+    --morado-claro: #F5EFFF;
+    --anaranjado-oscuro: #FFB200;
 }
 
 
@@ -131,6 +136,27 @@ ul {
     font-size: 2rem;
 }
 
+.bg-anaranjado{
+    background-color: var(--anaranjado-paleta);
+    border-radius: 8rem;
+}
+
+.bg-anaranjado-oscuro{
+    background-color: var(--anaranjado-oscuro);
+}
+
+.bg-celeste{
+    background-color: var(--amarillo-oscuro);
+}
+
+.bg-grisclaro{
+    background-color: var(--celeste);
+}
+
+.bg-morado-claro{
+    background-color: var(--morado-claro);
+}
+
 @media (min-width: 480px) {
 .contenedor{
     max-width: 90rem;
@@ -138,7 +164,7 @@ ul {
 }
 }
 
-@media (max-width: 919px) {
+@media (max-width: 1019px) {
 
     .color-bg-grid-principal{
         background-color: var(--morado-paleta);
@@ -164,10 +190,12 @@ ul {
     .home-final p{
         font-size: 3rem;
     }
+
+    
 }
 
 
-@media (min-width: 920px) {
+@media (min-width: 1020px) {
 
     .nav-logo {
         position: relative;
@@ -210,7 +238,7 @@ ul {
 
 .grid-derecho{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .grid-item1{
     width: 20rem; /* Ancho fijo */
@@ -227,7 +255,7 @@ ul {
 }
 
 .grid-item3{
-    width: 43rem; /* Ancho fijo */
+    width: 46rem; /* Ancho fijo */
   height: 38rem; /* Alto fijo */
   object-fit: cover; /* Ajusta la imagen para que no se deforme */
 }
@@ -273,7 +301,6 @@ ul {
     display: block;
     align-items: center;
     margin-left: 4rem;
-    margin-top: 8rem;
 }
 
 .home-final p{
