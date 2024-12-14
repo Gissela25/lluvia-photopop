@@ -24,7 +24,6 @@ html {
 }
 
 body {
-    font-size: 40px;
     /* 1 rem = 10px */
     background-color: var(--vesh-paleta);
 }
@@ -132,20 +131,120 @@ ul {
     width: 100%;
 }
 
+
 .contenido-principal h3{
     color: var(--acua-paleta);
+    font-size: 2rem;
 }
 
 .contenido-principal h4{
     color: var(--rosa-paleta);
+    font-size: 2rem;
 }
 
 @media (min-width: 480px) {
 .contenedor{
-    max-width: 50rem;
+    max-width: 90rem;
     margin: 0 auto; /* Centra el contenedor */
 }
 }
+
+@media (max-width: 919px) {
+    .color-bg-grid-principal{
+        background-color: var(--morado-paleta);
+    }
+    .grid-izquierdo{
+        display: block;
+    }
+    .grid-izquierdo img{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .grid-derecho img{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .grid-item6{
+        height: 50rem;
+        object-fit: cover; /* Ajusta la imagen para que no se deforme */
+    }
+    .grid-item1{
+        margin-top: 3rem;
+    }
+}
+
+
+@media (min-width: 920px) {
+.color-bg-grid-principal{
+    background-color: var(--morado-paleta);
+    padding: 1rem;
+    max-width: 100%;
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.grid-principal{
+    display: block;
+    align-items: center;
+}
+
+.grid-principal img{
+    display: block;
+    max-width: 100%; /* Evita que exceda el tamaño de la celda */ 
+}
+
+.grid-izquierdo{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.grid-derecho{
+    display: flex;
+    justify-content: space-between;
+}
+.grid-item1{
+    width: 20rem; /* Ancho fijo */
+  height: 25rem; /* Alto fijo */
+  object-fit: cover; /* Ajusta la imagen para que no se deforme */
+  margin-right: 2rem;
+}
+
+.grid-item2{
+    width: 20rem; /* Ancho fijo */
+  height: 25rem; /* Alto fijo */
+  object-fit: cover; /* Ajusta la imagen para que no se deforme */
+  margin-right: 2rem;
+}
+
+.grid-item3{
+    width: 43rem; /* Ancho fijo */
+  height: 38rem; /* Alto fijo */
+  object-fit: cover; /* Ajusta la imagen para que no se deforme */
+}
+
+.grid-item4{
+    width: 42rem; /* Ancho fijo */
+  height: 48rem; /* Alto fijo */
+  object-fit: cover; /* Ajusta la imagen para que no se deforme */
+  margin-top: 26rem;
+}
+
+.grid-item5{
+    width: 20rem; /* Ancho fijo */
+  height: 35rem; /* Alto fijo */
+  object-fit: cover; /* Ajusta la imagen para que no se deforme */
+  margin-top: 39rem;
+}
+
+.grid-item6{
+    width: 20rem; /* Ancho fijo */
+  height: 35rem; /* Alto fijo */
+  object-fit: cover; /* Ajusta la imagen para que no se deforme */
+  margin-top: 39rem;
+}
+}
+
+
 .about-section {
     padding: 4rem 2rem;
     background-color: #f4f4f4;
