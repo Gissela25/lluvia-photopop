@@ -96,7 +96,7 @@ ul {
 /* Estilo para la imagen de fondo */
 .nav-logo::before {
     content: "";
-    background-image: url('../img/Logo-Acua-sin-fondo.png');
+    background-image: url('https://storage.googleapis.com/imageslluvia/Logo-Acua-sin-fondo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

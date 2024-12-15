@@ -1,29 +1,34 @@
-runtime: python39
+runtime: nodejs20
 
 handlers:
-  # Serve assets like CSS, JS, and images
+  # Serve static assets: CSS, JS, and Images
   - url: /assets
     static_dir: assets
 
-  # Serve components like navbar and footer
   - url: /components
     static_dir: components
 
-  # Serve the main pages
-  - url: /investment.html
-    static_files: investment.html
-    upload: investment.html
+  # Serve the JS file for interactivity
+  - url: /script.js
+    static_files: script.js
+    upload: script.js
 
+  # Serve individual HTML files
   - url: /myhistory.html
     static_files: myhistory.html
     upload: myhistory.html
 
-  # Serve the homepage
+  - url: /investment.html
+    static_files: investment.html
+    upload: investment.html
+
+  # Serve index.html as the main page
   - url: /
     static_files: index.html
     upload: index.html
 
-  # Default route
+  # Catch all other routes and redirect to index.html
   - url: /.*
     static_files: index.html
     upload: index.html
+
