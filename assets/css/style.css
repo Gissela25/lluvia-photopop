@@ -3,16 +3,21 @@
     --oscuro: #212121;
     --gris: #757575;
     --rosa-paleta: #FF77B7;
+    --skyblue: #B9E5E8;
     --acua-paleta: #5B99C2;
+    --strong-yellow: #FADA7A;
     --vesh-paleta: #FEFAE0;
     --morado-paleta: #9932cc;
+    --yellow: #CCDF92;
     --anaranjado-paleta: #FFD18E;
     --amarillo-oscuro: #1F509A;
     --celeste: #D4EBF8;
     --morado-claro: #F5EFFF;
     --anaranjado-oscuro: #FFB200;
     --azul-oscuro: #001A6E;
-    --lluvia: #5BAEC1
+    --light-purple: #FADAFA;
+    --lluvia: #5BAEC1;
+    --lluvia2: #FFCFB3;
 }
 
 
@@ -42,6 +47,11 @@ nav {
 
 .font-Josefin {
     font-family: 'Josefin Sans';
+    color: var(--strong-yellow);
+}
+
+.font-Josefin2 {
+    font-family: 'Josefin Sans';
     color: var(--acua-paleta);
 }
 
@@ -69,7 +79,7 @@ nav ul li {
 
 
 .nav-principal a:hover {
-    color: var(--rosa-paleta);
+    color: var(--skyblue);
 }
 
 .nav-principal a {
@@ -133,7 +143,7 @@ ul {
 
 
 .contenido-principal h3 {
-    color: var(--acua-paleta);
+    color: var(--strong-yellow);
     font-size: 2rem;
 }
 
@@ -151,11 +161,11 @@ ul {
 }
 
 .bg-celeste {
-    background-color: var(--amarillo-oscuro);
+    background-color: var(--light-purple);
 }
 
 .bg-grisclaro {
-    background-color: var(--celeste);
+    background-color: var(--lluvia2);
 }
 
 .bg-morado-claro {
@@ -174,7 +184,7 @@ ul {
 @media (max-width: 1019px) {
 
     .color-bg-grid-principal {
-        background-color: var(--morado-paleta);
+        background-color: var(--yellow);
     }
 
     .grid-izquierdo {
@@ -230,7 +240,7 @@ ul {
     }
 
     .color-bg-grid-principal {
-        background-color: var(--morado-paleta);
+        background-color: var(--yellow);
         padding: 1rem;
         max-width: 100%;
         margin: 0 auto;
@@ -443,15 +453,15 @@ ul {
 }
 
 .bg-history {
-    background-color: var(--celeste);
-    border: 10px solid var(--lluvia);
+    background-color: var(--lluvia2);
+    border: 10px solid var(--lluvia2);
     /* Add the blue border */
     padding: 20px;
     /* Optional: adds padding inside the border */
 }
 
 .bg-history2 {
-    background-color: var(--azul-oscuro);
+    background-color: var(--light-purple);
     height: 100px;
     /* Aumenta la altura de la sección */
     padding: 20px;
