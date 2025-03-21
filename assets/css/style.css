@@ -18,7 +18,6 @@
     --light-purple: #FADAFA;
     --lluvia: #5BAEC1;
     --lluvia2: #FFCFB3;
-    --history: #BCE0F0;
 }
 
 
@@ -171,10 +170,6 @@ ul {
 
 .bg-morado-claro {
     background-color: var(--morado-claro);
-}
-
-.bg-container-inside {
-    background-color: var(--history);
 }
 
 
@@ -488,6 +483,3 @@ ul {
     /* Aumenta el espaciado interno */
 }
 
-.container-xxl{
-    background-color: lightskyblue;
-}
