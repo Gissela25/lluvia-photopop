@@ -487,3 +487,7 @@ ul {
     background-color: lightskyblue;
 }
 
+.bg-lightskyblue {
+    background-color: lightskyblue !important;
+}
+
