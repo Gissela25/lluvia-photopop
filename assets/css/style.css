@@ -491,3 +491,11 @@ ul {
     background-color: lightskyblue !important;
 }
 
+.bg-oranges {
+    background-color: var(--anaranjado-paleta) !important;
+}
+
+.bg-lpurple {
+    background-color: var(--light-purple) !important;
+}
+
