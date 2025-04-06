@@ -45,6 +45,32 @@ nav {
     font-size: 1.5rem;
 }
 
+/*  colores */
+
+
+.bg-morado-claro {
+    background-color: var(--morado-claro);
+}
+
+.bg-anaranjado-oscuro {
+    background-color: var(--anaranjado-oscuro);
+}
+
+.font-rosa-paleta {
+    color: var(--rosa-paleta);
+}
+
+.font-morado-paleta {
+    color: var(--morado-paleta);
+}
+
+.font-azul-oscuro {
+    color: var(--azul-oscuro);
+}
+
+
+
+
 .font-Josefin {
     font-family: 'Josefin Sans';
     color: var(--strong-yellow);
