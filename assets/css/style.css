@@ -347,7 +347,7 @@ ul {
 
     .home-final {
         display: block;
-        align-items: center;
+        align-items: end;
         margin-left: 4rem;
     }
 
