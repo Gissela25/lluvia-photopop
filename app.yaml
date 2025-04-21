@@ -22,6 +22,10 @@ handlers:
     static_files: investment.html
     upload: investment.html
 
+  - url: /services.html
+    static_files: services.html
+    upload: services.html
+
   # Serve index.html as the main page
   - url: /
     static_files: index.html
