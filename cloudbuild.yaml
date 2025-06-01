@@ -1,9 +1,10 @@
 steps:
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: 'bash'
-  args: ['-c', 'gcloud config set app/cloud_build_timeout 1600 && gcloud app deploy']
+  args:
+    - -c
+    - |
+      gcloud config set app/cloud_build_timeout 1600 && \
+      gcloud app deploy --account=280033530377@cloudbuild.gserviceaccount.com --quiet
 
 timeout: '1600s'
-
-options:
-  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
