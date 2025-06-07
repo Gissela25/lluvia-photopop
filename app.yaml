@@ -1,19 +1,16 @@
 runtime: nodejs20
 
 handlers:
-  # Serve static assets: CSS, JS, and Images
   - url: /assets
     static_dir: assets
 
   - url: /components
     static_dir: components
 
-  # Serve the JS file for interactivity
   - url: /script.js
     static_files: script.js
     upload: script.js
 
-  # Serve individual HTML files
   - url: /myhistory.html
     static_files: myhistory.html
     upload: myhistory.html
@@ -30,12 +27,15 @@ handlers:
     static_files: portfolio.html
     upload: portfolio.html
 
-  # Serve index.html as the main page
+  # NEW: Match /portfolio route without .html
+  - url: /portfolio
+    static_files: portfolio.html
+    upload: portfolio.html
+
   - url: /
     static_files: index.html
     upload: index.html
 
-  # Catch all other routes and redirect to index.html
   - url: /.*
     static_files: index.html
     upload: index.html
