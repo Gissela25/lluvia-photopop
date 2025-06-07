@@ -26,6 +26,10 @@ handlers:
     static_files: services.html
     upload: services.html
 
+  - url: /portfolio.html
+    static_files: portfolio.html
+    upload: portfolio.html
+
   # Serve index.html as the main page
   - url: /
     static_files: index.html
