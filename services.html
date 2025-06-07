@@ -9,11 +9,11 @@
   <title>Lluvia PhotoPop - Services</title>
 
   <!-- Fonts & Bootstrap -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
 
   <style>
@@ -48,29 +48,32 @@
     .custom-list {
       font-size: 1.25rem;
       line-height: 1.8;
+      list-style: none;
+      padding-left: 0;
     }
 
     .custom-list li {
       position: relative;
-      padding-left: 28px;
+      padding-left: 32px;
       margin-bottom: 16px;
     }
 
     .custom-list li::before {
-      content: "\f4a5";
+      content: "\f4a5"; /* bootstrap icon: check2-circle */
       font-family: "bootstrap-icons";
       color: #4a7e91;
       position: absolute;
       left: 0;
-      top: 2px;
-      font-size: 1.1rem;
+      top: 4px;
+      font-size: 1.3rem;
     }
 
     .note {
       font-size: 1rem;
       color: #777;
       margin-top: -10px;
-      padding-left: 28px;
+      padding-left: 32px;
+      font-style: italic;
     }
 
     .section:nth-of-type(odd) {
@@ -80,25 +83,155 @@
     .section:nth-of-type(even) {
       background-color: #fff9f5;
     }
+
+    /* Prices section special styling */
+    .prices-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .price-card {
+      background: #d6e6f2;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
+      color: #1f3d5a;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .price-card h3 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #2a5c85;
+    }
+
+    .price-card ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      flex-grow: 1;
+    }
+
+    .price-card ul li {
+      padding-left: 26px;
+      position: relative;
+      margin-bottom: 12px;
+    }
+
+    .price-card ul li::before {
+      content: "\f00c"; /* bootstrap icon: check */
+      font-family: "bootstrap-icons";
+      position: absolute;
+      left: 0;
+      color: #2a5c85;
+      font-size: 1rem;
+      top: 2px;
+    }
+
+    .addons {
+      margin-top: 20px;
+    }
+
+    .addons h3 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #2a5c85;
+      text-align: center;
+    }
+
+    .addons ul {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      font-size: 1.1rem;
+      color: #2a5c85;
+    }
+
+    .addons ul li {
+      background: #a5bedf;
+      border-radius: 12px;
+      padding: 10px 18px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      font-weight: 600;
+    }
+
   </style>
 </head>
 
 <body>
   <div id="navbar" class="p-3 text-center">Navbar</div>
 
- <div class="container-fluid vh-80 d-flex align-items-center bg-lightskyblue justify-content-center text-white;">
-  <div class="container p-5" style="background-color: #BCE0F0; max-width: 90%;">
-    <div class="row align-items-center">
-      <div class="col-md-5 text-center">
-      </div>
-      <div class="col-md-7">
-        <p class="text-dark fs-1 font-dancing">
-          Capturing Moments with Heart & Light
-        </p>
+  <div class="container-fluid vh-80 d-flex align-items-center bg-lightskyblue justify-content-center text-white">
+    <div class="container p-5" style="background-color: #BCE0F0; max-width: 90%;">
+      <div class="row align-items-center">
+        <div class="col-md-5 text-center">
+          <!-- Image or empty -->
+        </div>
+          <p class="text-dark fs-1 font-dancing text-center">
+            Capturing Moments with Heart & Light
+          </p>
       </div>
     </div>
   </div>
-</div>
+
+  <!-- PRICES SECTION -->
+  <section class="section">
+    <div class="section-box">
+      <h2 class="section-title">Pricing</h2>
+      <div class="prices-grid">
+        <div class="price-card">
+          <h3>Mini Sessions</h3>
+          <ul>
+            <li>Starting at just $100</li>
+            <li>30 min</li>
+            <li>Up to four people</li>
+            <li>One location or backdrop</li>
+            <li>One outfit</li>
+          </ul>
+        </div>
+
+        <div class="price-card">
+          <h3>Portraits</h3>
+          <ul>
+            <li>Starting at just $170</li>
+            <li>1h 30 min</li>
+            <li>Up to three people</li>
+            <li>Up to two outfits</li>
+            <li>Up to three nearby locations or two backdrops</li>
+          </ul>
+        </div>
+
+        <div class="price-card">
+          <h3>Events</h3>
+          <ul>
+            <li>Starting at just $240</li>
+            <li>Up to three hours of coverage</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="addons">
+        <h3>Add-Ons</h3>
+        <ul>
+          <li>Aerial photography</li>
+          <li>Aerial videoclips</li>
+          <li>Instant film photography</li>
+          <li>Videoclips</li>
+          <li>Social media reels</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <!-- SECTION 1: Photography Services -->
   <section class="section">
@@ -135,6 +268,7 @@
   </section>
 
   <div id="footer" class="p-3 text-center">Footer</div>
+
 
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
