@@ -18,6 +18,9 @@
     --light-purple: #FADAFA;
     --lluvia: #5BAEC1;
     --lluvia2: #FFCFB3;
+    --celeste-lluvia: #d6e6f2;
+    --celesta-claro-lluvia: #eaf4f8;
+    --azul-lluvia: lightskyblue;
 }
 
 
@@ -46,6 +49,19 @@ nav {
 }
 
 /*  colores */
+
+.bg-celesta-claro-lluvia{
+    background-color: var(--celesta-claro-lluvia);
+}
+
+.bg-celeste-lluvia{
+    background-color: var(--celeste-lluvia);
+}
+
+.bg-azul-lluvia{
+    background-color: var(--azul-lluvia);
+}
+
 
 
 .bg-morado-claro {
@@ -523,5 +539,48 @@ ul {
 
 .bg-lpurple {
     background-color: var(--light-purple) !important;
+}
+
+
+/* CONTACT ME  */
+
+.contact-me {
+    background-color: var(--celesta-claro-lluvia);
+    color: #333;
+  }
+  
+  .contact-me .section-title {
+    font-weight: bold;
+    color: var(--azul-lluvia);
+  }
+  
+  .contact-me .icon-box {
+    font-size: 2.5rem;
+    color: var(--azul-lluvia);
+    margin-bottom: 15px;
+  }
+  
+  .contact-box {
+    background-color: var(--celeste-lluvia);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-box:hover {
+    transform: translateY(-5px);
+    background-color: var(--azul-lluvia);
+    color: white;
+  }
+  
+  .contact-box i {
+    display: inline-block;
+  }
+
+
+.contact-box:hover .icon-box,
+.contact-box a:hover {
+  color: var(--azul-oscuro); 
 }
 
