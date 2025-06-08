@@ -4,14 +4,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Photography services by Lluvia PhotoPop - Studio, lifestyle, creative sessions and more." />
+  <meta name="description"
+    content="Photography services by Lluvia PhotoPop - Studio, lifestyle, creative sessions and more." />
   <meta name="robots" content="index,follow" />
   <title>Lluvia PhotoPop - Services</title>
 
   <!-- Fonts & Bootstrap -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&family=Dancing+Script:wght@400;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -59,7 +62,8 @@
     }
 
     .custom-list li::before {
-      content: "\f4a5"; /* bootstrap icon: check2-circle */
+      content: "\f4a5";
+      /* bootstrap icon: check2-circle */
       font-family: "bootstrap-icons";
       color: #4a7e91;
       position: absolute;
@@ -125,7 +129,8 @@
     }
 
     .price-card ul li::before {
-      content: "\f00c"; /* bootstrap icon: check */
+      content: "\f00c";
+      /* bootstrap icon: check */
       font-family: "bootstrap-icons";
       position: absolute;
       left: 0;
@@ -161,10 +166,23 @@
       background: #a5bedf;
       border-radius: 12px;
       padding: 10px 18px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       font-weight: 600;
     }
 
+    .price-card.full-width {
+      grid-column: 1 / -1;
+      /* spans all columns */
+    }
+
+    .price-card h3 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #2a5c85;
+      text-align: center;
+      /* ← Add this line */
+    }
   </style>
 </head>
 
@@ -177,9 +195,9 @@
         <div class="col-md-5 text-center">
           <!-- Image or empty -->
         </div>
-          <p class="text-dark fs-1 font-dancing text-center">
-            Capturing Moments with Heart & Light
-          </p>
+        <p class="text-dark fs-1 font-dancing text-center">
+          Capturing Moments with Heart & Light
+        </p>
       </div>
     </div>
   </div>
@@ -192,10 +210,9 @@
         <div class="price-card">
           <h3>Mini Sessions</h3>
           <ul>
-            <li>Starting at just $100</li>
-            <li>30 min</li>
-            <li>Up to four people</li>
-            <li>One location or backdrop</li>
+            <li>Starting at $140</li>
+            <li>15 min</li>
+            <li>One place or backdrop</li>
             <li>One outfit</li>
           </ul>
         </div>
@@ -203,19 +220,20 @@
         <div class="price-card">
           <h3>Portraits</h3>
           <ul>
-            <li>Starting at just $170</li>
-            <li>1h 30 min</li>
-            <li>Up to three people</li>
-            <li>Up to two outfits</li>
-            <li>Up to three nearby locations or two backdrops</li>
+            <li>Starting at just $180</li>
+            <li>1h</li>
+            <li>One place or backdrop</li>
+            <li>One outfit</li>
           </ul>
         </div>
 
-        <div class="price-card">
+        <div class="price-card full-width">
           <h3>Events</h3>
           <ul>
-            <li>Starting at just $240</li>
-            <li>Up to three hours of coverage</li>
+            <li>Starting at $300</li>
+            <li>Coverage up to 2.5h</li>
+            <li>For small gathering such as courthouse wedding, gender reveal, baby shower and birthday party.</li>
+            <li>Please contact me for bigger events such as quinceañera and wedding.</li>
           </ul>
         </div>
       </div>
@@ -277,4 +295,3 @@
 </body>
 
 </html>
-
