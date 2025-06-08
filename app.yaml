@@ -29,7 +29,10 @@ handlers:
   - url: /portfolio.html
     static_files: portfolio.html
     upload: portfolio.html
-
+  
+  - url: /contactme.html
+    static_files: contactme.html
+    upload: contactme.html
   # Serve index.html as the main page
   - url: /
     static_files: index.html
