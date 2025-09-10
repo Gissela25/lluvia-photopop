@@ -50,15 +50,15 @@ nav {
 
 /*  colores */
 
-.bg-celesta-claro-lluvia{
+.bg-celesta-claro-lluvia {
     background-color: var(--celesta-claro-lluvia);
 }
 
-.bg-celeste-lluvia{
+.bg-celeste-lluvia {
     background-color: var(--celeste-lluvia);
 }
 
-.bg-azul-lluvia{
+.bg-azul-lluvia {
     background-color: var(--azul-lluvia);
 }
 
@@ -102,6 +102,13 @@ nav {
     font-weight: 400;
     font-size: 3rem;
     color: var(--rosa-paleta);
+}
+
+.font-ede {
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -525,7 +532,7 @@ ul {
     /* Aumenta el espaciado interno */
 }
 
-.container-xxl{
+.container-xxl {
     background-color: lightskyblue;
 }
 
@@ -547,40 +554,39 @@ ul {
 .contact-me {
     background-color: var(--celesta-claro-lluvia);
     color: #333;
-  }
-  
-  .contact-me .section-title {
+}
+
+.contact-me .section-title {
     font-weight: bold;
     color: var(--azul-lluvia);
-  }
-  
-  .contact-me .icon-box {
+}
+
+.contact-me .icon-box {
     font-size: 2.5rem;
     color: var(--azul-lluvia);
     margin-bottom: 15px;
-  }
-  
-  .contact-box {
+}
+
+.contact-box {
     background-color: var(--celeste-lluvia);
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
     transition: transform 0.3s ease;
-  }
-  
-  .contact-box:hover {
+}
+
+.contact-box:hover {
     transform: translateY(-5px);
     background-color: var(--azul-lluvia);
     color: white;
-  }
-  
-  .contact-box i {
+}
+
+.contact-box i {
     display: inline-block;
-  }
+}
 
 
 .contact-box:hover .icon-box,
 .contact-box a:hover {
-  color: var(--azul-oscuro); 
+    color: var(--azul-oscuro);
 }
-
